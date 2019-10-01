@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="browser" onchange="change(this)">
+    <option value="edge">Edge</option>
+    <option value="chrome">Chrome</option>
+    <option value="firefox">Firefox</option>
+    <option value="safari">Safari</option>
+    <option value="opera">Opera</option>
+</select>
+<script>
+function change(option) {
+    switch (option.value) {
+        case "edge":alert("You've got the Edge");break;
+        case "chrome":
+        case "firefox":
+        case "safari":
+        case "opera":
+            alert("Okay we support these browsers too");
+            break;
+        default:alert("We hope that this page look ok");break;
+    }
+}
+</script>
+</body>
+</html>
